@@ -1,0 +1,5 @@
+library(rpart)
+data(iris)
+tree_model <- rpart(Species ~ ., data = iris, method = "class")
+plot(tree_model)
+text(tree_model)

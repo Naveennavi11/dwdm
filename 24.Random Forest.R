@@ -1,0 +1,5 @@
+library(randomForest)
+data(iris)
+rf_model <- randomForest(Species ~ ., data = iris, ntree = 500)
+print(rf_model)
+varImpPlot(rf_model)

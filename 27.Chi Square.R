@@ -1,0 +1,5 @@
+observed <- matrix(c(20, 30, 15, 25), nrow = 2, byrow = TRUE)
+rownames(observed) <- c("Group 1", "Group 2")
+colnames(observed) <- c("Category A", "Category B")
+chi_squared <- chisq.test(observed)
+print(chi_squared)
